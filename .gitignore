@@ -1,0 +1,17 @@
+vendor/*
+*.sublime-*
+*.phar
+test/Unit/_Report/*
+test/Unit/phpunit.output*
+/.project
+*.sublime-*
+.idea/*
+composer.phar
+www/Asset/*
+www/Script-*/*
+www/Style-*/*
+www/static-fingerprint
+vendor/*
+src/Asset/vendor/*
+src/Style/vendor/*
+*.log

@@ -1,0 +1,60 @@
+@import "_variables.scss";
+
+body {
+	font-family: "sofia-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	max-width: 60rem;
+	margin: 0 auto;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	h1 {
+		font-family: "sofia-pro",sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		@media (min-width: $breakpoint-mid) {
+			font-size: 4rem;
+		}
+	}
+	h2 {
+		font-family: "sofia-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+	}
+	header {
+		width: 100%;
+	}
+	main {
+		margin: 4rem 0;
+		overflow: hidden;
+		div {
+			margin-bottom: 2rem;
+			min-height: 18rem;
+			@media (min-width: $breakpoint-mid) {
+				width: 30%;
+				margin-right: 5%;
+				float: left;
+				&:nth-child(3n+3) {
+					margin-right: 0;
+				}
+			}
+			img {
+				max-width: 100%;
+				@media (min-width: $breakpoint-mid + 20rem) {
+					border-radius: 0.2rem;
+				}
+			}
+			* {
+			}
+		}
+	}
+	footer {
+		width: 100%;
+		margin: 2rem 0 8rem 0;
+		@media (min-width: $breakpoint-mid) {
+			margin: 4rem 0 12rem 0;
+		}
+	}
+}
