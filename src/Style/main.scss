@@ -30,7 +30,9 @@ body {
 		margin: 4rem 0;
 		overflow: hidden;
 		div {
+			margin: 0 auto;
 			margin-bottom: 2rem;
+			max-width: 320px;
 			min-height: 18rem;
 			@media (min-width: $breakpoint-mid) {
 				width: 30%;
@@ -44,6 +46,12 @@ body {
 				max-width: 100%;
 				@media (min-width: $breakpoint-mid + 20rem) {
 					border-radius: 0.2rem;
+				}
+			}
+			p {
+				padding: 0 1rem;
+				@media (min-width: $breakpoint-mid) {
+					padding: 0;
 				}
 			}
 			* {
