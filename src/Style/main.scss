@@ -6,22 +6,26 @@ body {
 	font-weight: 400;
 	max-width: 60rem;
 	margin: 0 auto;
-	text-align: center;
 	text-rendering: optimizeLegibility;
+	text-align: center;
+	@media (min-width: $breakpoint-mid) {
+		text-align: left;
+	}
 	h1 {
 		font-family: "sofia-pro",sans-serif;
 		font-style: normal;
 		font-weight: 700;
 		padding-bottom: 0;
-		margin-bottom: 0;
+		margin: 3.8rem 0 0 0;
 		@media (min-width: $breakpoint-mid) {
-			font-size: 4rem;
+			font-size: 2.4rem;
 		}
 	}
 	h2 {
 		font-family: "sofia-pro",sans-serif;
 		font-style: normal;
 		font-weight: 400;
+		margin: 0;
 	}
 	header {
 		width: 100%;
@@ -44,7 +48,7 @@ body {
 			}
 			img {
 				max-width: 100%;
-				@media (min-width: $breakpoint-mid + 20rem) {
+				@media (min-width: 340px) {
 					border-radius: 0.2rem;
 				}
 			}
