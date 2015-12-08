@@ -46,13 +46,15 @@ body {
 					margin-right: 0;
 				}
 			}
-			transition: transform 0.05s;
-			&:hover {
-				transform: scale(1.2);
-				transition: transform 0.1s, box-shadow 0.1s;
-				box-shadow: 0px 20px 120px 10px rgba(0,0,0,0.4);
-				background: white;
-				outline: 1.2rem solid white;
+			@media (min-width: $breakpoint-mid*1.6) {
+				transition: transform 0.05s;
+				&:hover {
+					transform: scale(1.2);
+					transition: transform 0.1s, box-shadow 0.1s;
+					box-shadow: 0px 20px 120px 10px rgba(0,0,0,0.4);
+					background: white;
+					outline: 1.2rem solid white;
+				}
 			}
 			img {
 				max-width: 100%;
